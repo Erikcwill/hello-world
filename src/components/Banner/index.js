@@ -9,11 +9,11 @@ export default function Banner() {
         <h1 className={styles.title}>Hello, World</h1>
 
         <p className={styles.paragraph}>
-          Boas vindas ao meu espaço pessoal! Eu sou Erick William um
-          desenvolvedor Front-End que está se aprimorando no React. Eu criei
-          esse espaço para fim de aperfeiçoar minhas tecnicas no uso do React,
-          nesse espaço eu realizei meus primeiros passos com a biblioteca
-          ReactRouter :)
+          Seja bem-vindo ao meu espaço pessoal! Eu sou Erick William, um
+          desenvolvedor Front-End que está constantemente aprimorando suas
+          habilidades em React. Este espaço foi criado com o objetivo de
+          aperfeiçoar minhas técnicas no uso do React, e aqui foi onde dei meus
+          primeiros passos com a biblioteca React Router :)
         </p>
       </div>
 

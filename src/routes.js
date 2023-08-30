@@ -3,15 +3,24 @@ import AboutMe from "./pages/AboutMe";
 import Home from "./pages/Home";
 import Menu from "./components/Menus";
 import Footer from "components/Footer";
+import DefaultPage from "components/DefaultPage";
+import Post from "pages/Posts";
+import NotFound from "pages/NotFound";
+import ScrollToTop from "components/ScrollToTop";
 
 function AppRoutes() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Menu />{" "}
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/aboutme" element={<AboutMe />} />
-        <Route path="*" element={<div>404</div>} />
+        <Route path="/" element={<DefaultPage />}>
+          <Route index element={<Home />} />
+          <Route path="/aboutme" element={<AboutMe />} />
+        </Route>
+
+        <Route path="posts/:id/*" element={<Post />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>
